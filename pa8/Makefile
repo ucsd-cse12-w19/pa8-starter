@@ -16,5 +16,5 @@ insert.run: insert.c insert_main.c
 struct_of_picture: struct_of_picture.run
 	valgrind --leak-check=full --undef-value-errors=no ./struct_of_picture.run
 
-struct_of_picture.run: struct_of_picture.c
-	gcc -Wall -g struct_of_picture.c -o struct_of_picture.run
+match_struct.run: match_struct.c
+	gcc -Wall -g match_struct.c -o match_struct.run

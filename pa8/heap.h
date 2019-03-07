@@ -1,15 +1,17 @@
-
-struct Pair {
+#ifndef HEAP_H
+#define HEAP_H
+#include <stdbool.h>
+struct Entry {
   int key;
   char* value;
 };
 
-typedef struct Pair Pair;
+typedef struct Entry Entry;
 
 struct Heap {
   int capacity;
   int size;
-  Pair* elements;
+  Entry** elements;
 };
 
 typedef struct Heap Heap;
