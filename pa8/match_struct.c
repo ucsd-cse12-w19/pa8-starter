@@ -2,26 +2,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct S {
-  int x;
+typedef struct S {
+  int val;
   struct S* left;
   struct S* right;
-};
+} S;
 
 S* setupAns1() {
   // Make the contents of ans1 succeed at the comparisons below
+  S* ans1;
 
-	return ans1;
+  return ans1;
 }
 
 
 S** setupAns2() {
 
   // Make the contents of ans2 succeed at the comparisons below
+  S** ans2;
 
-	return ans2;
+  return ans2;
 }
-
 
 int main(void) {
 
