@@ -22,3 +22,5 @@ char* removeMin(Heap* heap);
 char* peek(Heap* heap);
 int size(Heap* heap);
 void cleanupHeap(Heap* h);
+
+#endif

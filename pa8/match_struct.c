@@ -54,7 +54,16 @@ int main(void) {
     (s2[2] == NULL);
 	if(ans2OK) { printf("You got ans2!\n"); }
 	else { printf("ans2 didn't match\n"); }
-		
+
+  free(s1->right);
+  free(s1);
+
+  free(s2[0]->left);
+  free(s2[0]->right);
+  free(s2[0]);
+  free(s2[1]);
+  free(s2);
+
   return 0;
 
 }
